@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Document Object</h1>
+<h2>The addEventListener() Method</h2>
+
+<p>This example adds two click events to the document.</p>
+
+<p>Click anywhere in the document.</p>
+
+<p id="demo"></p>
+
+<script>
+document.addEventListener("click", myFunction1);
+document.addEventListener("click", myFunction2);
+
+function myFunction1() {
+  document.getElementById("demo").innerHTML += "First function was executed! "
+}
+
+function myFunction2() {
+  document.getElementById("demo").innerHTML = "Second function was executed! "
+}
+</script>
+
+</body>
+</html>
